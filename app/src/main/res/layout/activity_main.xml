@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:text="First Name"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+                />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:text="Last Name"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailAddress"
+        android:text="Email Address"
+        android:layout_below="@+id/lastName"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postcode"
+        android:text="Post Code"
+        android:layout_below="@+id/emailAddress"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/firstNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+
+        android:layout_toRightOf="@+id/firstName"
+        android:layout_marginLeft="20dp"
+        android:hint="Please your First Name"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/firstName"
+        />
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameInput"
+
+        android:layout_toRightOf="@+id/lastName"
+        android:layout_marginLeft="20dp"
+        android:hint="Please your Last Name"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/lastName"
+        />
+    <EditText
+        android:id="@+id/emailAddressInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastNameInput"
+
+        android:layout_toRightOf="@+id/emailAddress"
+        android:layout_marginLeft="20dp"
+        android:hint="Please your Email Address"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/emailAddress"
+        />
+    <EditText
+        android:id="@+id/postcodeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailAddressInput"
+
+        android:layout_toRightOf="@+id/postcode"
+        android:layout_marginLeft="20dp"
+        android:hint="Please your First Name"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/postcode"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/save"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_below="@+id/postcodeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#1ab0e5"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        />
+
+</RelativeLayout>
